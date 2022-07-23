@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './App.module.scss';
+import s from './App.module.css';
 import {TaskBoard} from "./pages/taskBoard/TaskBoard";
 import {Provider} from "react-redux";
 import {store} from "./store/store";
@@ -15,7 +15,6 @@ const App: React.FC = () => {
   return (
       <Provider store={store}>
           <BrowserRouter>
-
               <_App/>
           </BrowserRouter>
       </Provider>

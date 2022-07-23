@@ -1,16 +1,13 @@
 import React from 'react';
-import {Space} from "../../components/01-space/Space";
-import {Board} from "../../components/02-board/Board";
-import {Task} from "../../components/03-task/Task";
+import s from './TaskBoard.module.css'
+import {MySpace} from "../../components/01-space/Space";
 
 export const TaskBoard: React.FC = () => {
 
     return (
-        <div>
-            <div>TaskBoard</div>
-            <Space/>
-            <Board/>
-            <Task/>
+        <div className={s.body}>
+            <MySpace/>
+            <MySpace/>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-export enum TypeTask {
+export enum TypeCommon {
     standard = 'standard',
     important = 'important'
 }
@@ -11,28 +11,41 @@ export enum RainbowColors {
     blue = '#12bdb9',
     indigo = '#4444dd',
     violet = '#a12ec7',
+    gray = '#777777'
 }
 
 export type TaskType = {
-    id: string
+    id: number
     title: string
     description: string
     isCompleted: boolean
     isMark: boolean
-    type: TypeTask
+    type: TypeCommon
+    color: RainbowColors
+    created_at: number
+    updated_at: number
+}
+
+export type BoardType = {
+    id: number
+    title: string
+    description: string
+    tasksArray: TaskType[]
+    isMark: boolean
+    type: TypeCommon
     color: RainbowColors
     created_at: Date
     updated_at: Date
 }
 
-export type BoardType = {
-    id: string
-    title: string
-    description: string
-}
-
 export type SpaceType = {
-    id: string
+    id: number
     title: string
     description: string
+    boardsArray: BoardType[]
+    isMark: boolean
+    type: TypeCommon
+    color: RainbowColors
+    created_at: Date
+    updated_at: Date
 }

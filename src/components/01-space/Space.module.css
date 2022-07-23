@@ -1,0 +1,11 @@
+.body {
+  background: bisque;
+}
+
+.boardsContent {
+  /*//display: flex;*/
+  /*//flex-flow: row nowrap;*/
+  /*//align-items: flex-start;*/
+  /*//background: indianred;*/
+  overflow-x: scroll;
+}

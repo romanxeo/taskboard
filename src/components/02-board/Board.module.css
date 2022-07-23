@@ -1,0 +1,11 @@
+.body {
+  background: greenyellow;
+}
+
+.tasksContent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  background: cornflowerblue;
+  overflow-x: scroll;
+}

@@ -34,8 +34,8 @@ export type BoardType = {
     isMark: boolean
     type: TypeCommon
     color: RainbowColors
-    created_at: Date
-    updated_at: Date
+    created_at: number
+    updated_at: number
 }
 
 export type SpaceType = {
@@ -46,6 +46,6 @@ export type SpaceType = {
     isMark: boolean
     type: TypeCommon
     color: RainbowColors
-    created_at: Date
-    updated_at: Date
+    created_at: number
+    updated_at: number
 }

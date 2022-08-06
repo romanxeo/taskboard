@@ -12,8 +12,10 @@ const Header: React.FC = () => {
 
     const isAuth = useSelector<AppRootStateType, boolean>(state => state.app.isAuth)
     const userData = useSelector<AppRootStateType, userDataType>(state => state.app.userData)
+    const firebaseAuth = useSelector<AppRootStateType, any>(state => state.app.firebase?.firebaseAuth)
 
     const logout = () => {
+        firebaseAuth.signOut()
         dispatch(logoutAC())
     }
 

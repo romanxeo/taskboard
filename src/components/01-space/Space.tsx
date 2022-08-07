@@ -11,7 +11,7 @@ import {
     StarFilled
 } from "@ant-design/icons";
 import {Task} from "../03-task/Task";
-import {BoardType, RainbowColors, SpaceType, TypeCommon} from "../../types/taskReducerTypes";
+import {BoardType, RainbowColors, SpaceType, ModeCommon} from "../../types/taskReducerTypes";
 
 export const MySpace: React.FC = () => {
 
@@ -21,7 +21,7 @@ export const MySpace: React.FC = () => {
         description: 'Some space. Many words. For you. Down use Lorem Ipsum',
         boardsArray: [],
         isMark: false,
-        type: TypeCommon.standard,
+        type: ModeCommon.standard,
         color: RainbowColors.gray,
         created_at: Date.now(),
         updated_at: Date.now(),

@@ -10,7 +10,7 @@ import {
     ExclamationCircleOutlined, MenuOutlined,
     StarFilled
 } from "@ant-design/icons";
-import {BoardType, RainbowColors, TaskType, TypeCommon} from "../../types/taskReducerTypes";
+import {BoardType, RainbowColors, TaskType, ModeCommon} from "../../types/taskReducerTypes";
 
 export const Board: React.FC = () => {
 
@@ -21,7 +21,7 @@ export const Board: React.FC = () => {
         description: 'Some board. Many words. For you. Down use Lorem Ipsum',
         tasksArray: [],
         isMark: false,
-        type: TypeCommon.standard,
+        type: ModeCommon.standard,
         color: RainbowColors.gray,
         created_at: Date.now(),
         updated_at: Date.now(),

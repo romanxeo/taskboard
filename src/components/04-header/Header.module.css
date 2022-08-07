@@ -1,0 +1,10 @@
+.avatar {
+    height: 34px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+}

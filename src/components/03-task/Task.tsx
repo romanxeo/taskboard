@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './Task.module.css'
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../../store/store";
-import {RainbowColors, TaskType, TypeCommon} from "../../types/taskReducerTypes";
+import {RainbowColors, TaskType, ModeCommon} from "../../types/taskReducerTypes";
 import 'antd/dist/antd.css';
 import {Card, Checkbox, Dropdown, Menu, Space} from "antd";
 import {
@@ -21,7 +21,7 @@ export const Task: React.FC = () => {
         description: 'Some task. Many words. For you. Down use Lorem Ipsum',
         isCompleted: false,
         isMark: false,
-        type: TypeCommon.standard,
+        type: ModeCommon.standard,
         color: RainbowColors.gray,
         created_at: Date.now(),
         updated_at: Date.now(),

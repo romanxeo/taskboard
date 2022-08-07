@@ -1,4 +1,4 @@
-export enum TypeCommon {
+export enum ModeCommon {
     standard = 'standard',
     important = 'important'
 }
@@ -14,38 +14,33 @@ export enum RainbowColors {
     gray = '#777777'
 }
 
-export type TaskType = {
-    id: number
+export type createCommonType = {
     title: string
     description: string
+}
+
+export type updateCommonType = createCommonType & {
+    isMark: boolean
+    mode: ModeCommon
+    color: RainbowColors
+}
+
+export type dataCommonType = {
+    created_at: number
+    updated_at: number
+}
+
+export type TaskType = updateCommonType & dataCommonType & {
+    taskId: string
     isCompleted: boolean
-    isMark: boolean
-    type: TypeCommon
-    color: RainbowColors
-    created_at: number
-    updated_at: number
 }
 
-export type BoardType = {
-    id: number
-    title: string
-    description: string
+export type BoardType = updateCommonType & dataCommonType & {
+    boardId: string
     tasksArray: TaskType[]
-    isMark: boolean
-    type: TypeCommon
-    color: RainbowColors
-    created_at: number
-    updated_at: number
 }
 
-export type SpaceType = {
-    id: number
-    title: string
-    description: string
+export type SpaceType = updateCommonType & dataCommonType & {
+    spaceId: string
     boardsArray: BoardType[]
-    isMark: boolean
-    type: TypeCommon
-    color: RainbowColors
-    created_at: number
-    updated_at: number
 }
